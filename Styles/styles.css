@@ -1,0 +1,424 @@
+/* Custom Fonts
+    -- Importing directly in the CSS file can save load times
+*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    --dark: #262626;
+}
+
+a {
+    text-decoration: none;
+    /* Dev */
+    color: #fff;
+}
+
+/* Flexbox classes to save time */
+.flex {
+    display: flex;
+}
+
+.center-both {
+    justify-content: center;
+    align-items: center;
+}
+
+.center-horizontal {
+    justify-content: center;
+}
+
+.center-vertical {
+    align-items: center;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+/* Header Styles */
+.header-container {
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.header-container img {
+    width: 55px;
+    height: 36px;
+    padding-left: 10px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(11deg) brightness(106%) contrast(101%);
+}
+
+.header-title {
+    /* font-family: 'Akaya Telivigala', cursive !important; */
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.header-nav {
+    height: 100%;
+    width: auto;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+.nav-item {
+    font-size: 18px;
+    padding-left: 18px;
+    /* cursor: pointer; */
+}
+
+/* Content Styles */
+.content-wrapper {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+
+/* Info panel */
+.info-container {
+    width: 70%;
+    height: auto;
+    flex-direction: row;
+    background-color: var(--dark);
+    margin-top: 145px;
+}
+
+.info-text-wrapper {
+    width: 50%;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+}
+
+.info-title {
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.info-text {
+    font-size: 17px;
+}
+
+.info-image {
+    width: 50%;
+    height: auto;
+    background: url(/Images/wutang_group.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+    background-position: center;
+}
+
+.home-icon {
+    animation: MoveUpDown 2s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 170px;
+    height: 120px;
+  }
+
+/* Animation seen on the homepage */
+@keyframes MoveUpDown {
+    0%, 100% {
+        top: 80px;
+    }
+    50% {
+        top: 100px;
+    }
+}
+
+
+/* Notification Styles */
+.notification-container {
+    width: auto;
+    min-width: 310px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #ff5400;
+    border-left: 0;
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+    border-radius: 0px 10px 10px 0px;
+    left: 0;
+}
+
+.notification-inner {
+    padding: 10px;
+    flex-direction: column;
+}
+
+.notification-close::before {
+    content: "\00d7";
+    font-weight: 600;
+    font-size: 23px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: #ff5400;
+}
+
+.notification-title {
+    font-weight: 600;
+}
+
+.notification-close {
+    margin-left: auto;
+}
+
+.notification-text {
+    font-size: 13px;
+    padding-bottom: 13px;
+}
+
+/* Mail Form Styles */
+.mailing-list {
+    margin-top: 40px;
+    background-color: var(--dark);
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 84px;
+}
+
+.mail-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.mail-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.input-field {
+    outline: none;
+    height: 40px;
+    width: calc(300px - 10px);
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+
+.mail-input:focus {
+    border-right: 3px solid #ff5400;
+    transition: width border-right 0.5s;
+    width: calc(300px - 13px);
+}
+
+.input-button {
+    border: none;
+    width: 70px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark);
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #fff;
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.mobile-title {
+    margin-top: 155px;
+    font-weight: 800;
+    display: none;
+    font-size: 25px;
+}
+
+/* Changes Image for different pages */
+.album-background {
+    background: url(/Images/album.jpg) no-repeat;
+    background-position: center;
+}
+
+.contact-background {
+    background: url(/Images/contact.jpg) no-repeat;
+    background-position: center;
+}
+
+/* Search Results and Form styling */
+.res-year {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    flex-direction: row;
+}
+
+.year-text {
+    font-weight: 800;
+    color: #ff5400;
+    padding-left: 10px;
+}
+
+.res-items {
+    flex-direction: column;
+    padding: 0;
+}
+
+.res-name {
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+.res-image {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.res-item {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.title-crown {
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 4px;
+}
+
+.year-search {
+    background-color: #505050;
+    color: #fff;
+    width: 80%;
+}
+
+.search-button {
+    border: none;
+    width: 65px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 20%;
+    background-color: #00ff89;
+}
+
+.hof-wrapper {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-results {
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-comp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    flex-direction: row;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.hof-button {
+    width: 145px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4700;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hof-button:hover {
+    opacity: 0.7;
+}
+
+/* Media queries to make the website responsive */
+@media only screen and (max-width: 530px) {
+    .info-container {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .info-text-wrapper {
+        width: calc(100% - 40px);
+    }
+
+    .info-image {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        background-size: cover;
+    }
+
+    .mailing-list {
+        border-radius: 0;
+        margin-bottom: 41px;
+    }
+
+    .hof-wrapper {
+        width: calc(100% - 40px);
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .res-year {
+        font-size: 16px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+}

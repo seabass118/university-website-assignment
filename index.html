@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Document title -->
+        <title>Wu-Tang | Albums</title>
+    
+        <!-- Preload the component JavaScript file before the rest of DOM -->
+        <script src="Scripts/components.js"></script>
+    
+        <!-- Stylesheet  -->
+        <link rel="stylesheet" href="Styles/styles.css">
+
+        <!-- Icons and theme -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Meta/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Meta/favicon-16x16.png">
+        <link rel="manifest" href="/Meta/site.webmanifest">
+        <link rel="mask-icon" href="/Meta/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!-- Header Component -->
+    <header-component></header-component>
+
+    <!-- Main Content -->
+    <div class="content-wrapper flex center-horizontal center-vertical">
+        <div class="home-icon">
+            <img src="/Images/wutang_logo.png" style="width: 170px; height: 120px;" alt="Wutang Logo">
+        </div>
+        <div class="mobile-title">
+            WU-TANG
+        </div>
+        <div class="info-container flex rounded">
+            <div class="info-text-wrapper">
+                <div class="info-title">
+                    About Us
+                </div>
+                <div class="info-text">
+                    Wu-Tang Clan is an American hip hop group formed in Staten Island, New York City, in 1992. Its original members include RZA, GZA, Ol' Dirty Bastard, Method Man, Raekwon, Ghostface Killah, Inspectah Deck, U-God, and Masta Killa. Close affiliate Cappadonna later became an official member.
+                </div>
+            </div>
+            <div class="info-image">
+                <!-- Image is set in CSS using 'background' -->
+            </div>
+        </div>
+
+        <!-- Hall of fame button (redirects to hall of fame page) -->
+        <hof-button-component></hof-button-component>
+
+        <!-- Mail Form Component -->
+        <form-component class="form-comp"></form-component>
+
+        <!-- Notification Component -->
+        <notification-component></notification-component>
+
+        <!-- Footer Component -->
+        <footer-component style="width: 100%;"></footer-component>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
